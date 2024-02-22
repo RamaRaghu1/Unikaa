@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+  <nav class="bg-white">
+    <div class="container mx-auto px-5 py-2 lg:flex items-center" >
+      <div class="flex justify-between">
+        <a href="./index.html">
+            <img src="./images/home/logo_top.jpg" alt="" class="h-14">
+           </a> 
+           <button onclick="toggleMenu()" class="lg:hidden">
+            <i class="fa-solid fa-bars fa-2x cursor-pointer" style="color:red" ></i>
+           </button>
+      </div>
+     <div class="ml-auto mt-5 lg:mt-0 hidden lg:block" id="menu">
+       
+          
+            <ul class=" lg:flex  text-[#3576D4]"  >
+                <li class="m-4 hover:text-red-500 text-red-500"><a href="./index.html">Home</a></li>
+                <li class="m-4 hover:text-red-500"><a href="./about.html">About</a></li>
+                <li class="m-4 hover:text-red-500"><a href="./product.html">Product</a></li>
+                <li class="m-4 hover:text-red-500"><a href="./faq.html">FAQ</a></li>
+                <li class="m-4 hover:text-red-500"><a href="./gallery.html">Gallery</a></li>
+                <li class="m-4 hover:text-red-500"><a href="./contact.html">Contact</a></li>
+                <li class="m-4 hover:text-red-500"><a href="./login.html">Login</a></li>
+            </ul>
+     </div>
+    </div>
+</nav>
+    <section class="bg-[#F8F6F4] md:h-screen p-4  flex flex-col h-auto">
+       
+        <div class="flex flex-col md:w-[570px] w-[350px] h-[420px] gap-4 mx-auto my-12 ">
+            <div class="flex justify-between ">
+                <p class="text-2xl text-[#3576D4] font-bold">Signup</p>
+                <p class="text-[#3576D4] text-xl"> <span></span><i class="fa-solid fa-right-to-bracket" style="color:#3576D4"></i></span> <a href="./login.html">Login</a></p>
+            </div>
+            <input type="text" class="bg-gray-200 h-12 rounded-lg h-[55px] px-4 " placeholder="Name">
+            <input type="text" class="bg-gray-200 h-12 rounded-lg h-[55px] px-4" placeholder="Mobile Number">
+            <input type="text" class="bg-gray-200 h-12 rounded-lg h-[55px] px-4" placeholder="Username or Email Id">
+            <input type="text" class="bg-gray-200 h-12 rounded-lg h-[55px] px-4" placeholder="Password">
+           
+            <button class="text-xl font-bold text-white rounded-full bg-[#3576D4] w-2/4 md:w-1/4 mx-auto p-4"> Sign Up</button>
+        </div>
+    </section>
+
+
+     <!-- footer -->
+     <div id="footer" class="grid grid-cols-2 md:grid-cols-4  p-8  justify-center items-center bg-[#3576D4] h-[200px] w-screen h-auto text-white md:px-48 gap-12">
+
+
+        <div class="w-[350px] m-auto ">
+       
+            <h3 class="font-bold text-xl ">Unikaa Activities</h3>
+          <div class="text-xl text-slate-300">
+            <p>Upcoming Events</p>
+            <p>Seminars</p>
+            <p>Performance</p>
+          </div>
+        </div>
+        <div class="w-[350px] m-auto">
+            <h3 class="font-bold text-xl ">Quick Links</h3>
+             <ul class="text-xl text-slate-300">
+                <li><a href="#home">Terms & Conditions</a></li>
+                <li><a href="#about">Refund Policy</a></li>
+         
+                <li><a href="#product">Privacy Policy</a></li>
+              
+             </ul>
+        </div>
+        <div class="w-[350px] ">
+            <h3 class="font-bold text-xl ">Head Office</h3>
+           <div class="text-xl text-slate-300">
+            <p>Chennai, Tamilnadu, India.</p>
+            <p>+91 7092 77 44 55</p>
+            <p> +91 7092 77 44 22</p>
+            <p>info@unikaa.in</p>
+           </div>
+          </div>
+
+
+          <div class="w-[350px] ">
+            <h3 class="font-bold text-xl p-2">State Contact</h3>
+            <div class="text-xl text-slate-300">
+              <p>Tamilnadu</p>
+             <p>Kerala</p>
+             <p>Andhra</p>
+            </div>
+         
+          </div>
+    </div>
+    <script>
+      function toggleMenu(){
+        menu=document.getElementById('menu');
+        if(menu.classList.contains('hidden')){
+          menu.classList.remove('hidden')
+        }else{
+          menu.classList.add('hidden')
+        }
+      
+      }  
+          </script>
+    <!-- fontawesome cdn -->
+
+    <script src="https://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+   
+
+      
+</head>
+<body class="overflow-x-hidden">
+   <section class="mt-0 lg:h-24 z-50">
+    <nav class="">
+      <div class="container mx-auto px-5 py-2 lg:flex items-center" >
+        <div class="flex justify-between">
+          <a href="./index.html">
+              <img src="./images/home/logo_top.jpg" alt="" class="h-14">
+             </a> 
+             <button onclick="toggleMenu()" class="lg:hidden">
+              <i class="fa-solid fa-bars fa-2x cursor-pointer   " style="color:red" ></i>
+             </button>
+        </div>
+       <div class="ml-auto mt-5 lg:mt-0 hidden lg:block" id="menu">
+         
+            
+              <ul class=" lg:flex  text-[#3576D4]"  >
+                  <li class="m-4 hover:text-red-500 text-red-500"><a href="./index.html">Home</a></li>
+                  <li class="m-4 hover:text-red-500"><a href="./about.html">About</a></li>
+                  <li class="m-4 hover:text-red-500"><a href="./product.html">Product</a></li>
+                  <li class="m-4 hover:text-red-500"><a href="./faq.html">FAQ</a></li>
+                  <li class="m-4 hover:text-red-500"><a href="./gallery.html">Gallery</a></li>
+                  <li class="m-4 hover:text-red-500"><a href="./contact.html">Contact</a></li>
+                  <li class="m-4 hover:text-red-500"><a href="./login.html">Login</a></li>
+              </ul>
+       </div>
+      </div>
+  </nav>
+       
+
+      </section>
+
+
+  <section class="bg-[#F8F6F4] lg:h-screen h-[500px] ">
+           
+<div class="relative ">
+
+  
+  <ul id="slider">
+    <li class="md:h-screen h-[500px]  md:pt-0 relative">
+      <img src="./images/home/123.jpg" alt="" class="h-full object-cover">
+      <div class="absolute top-0 left-0 w-3/5 h-auto flex  md:p-32 lg:py-10 m-24 flex flex-col gap-4">
+        <h2 class="md:text-3xl text-2xl text-white font-bold ">Risk Free Trading False Call Detection</h2>
+        <p class="text-white md:text-xl text-md">No need of any prior Technical or Fundamental knowledge (just follow Unikaa Trade Software). The generated buy sell signals analysis through most complex confirmation and filtering systems assures the generated buy sell signals have more than 95% accuracy, this will help every trade to trade with protected capital.</p>
+        <button class="bg-inherit rounded-full p-2 text-white border border-white cursor-pointer w-2/4 md:w-1/4">Click for Demo</button>
+      </div>
+      
+    </li>
+    <li class="md:h-screen h-[500px]  md:pt-0 relative hidden">
+      <img src="./images/home/1234.jpg" alt="" class="h-full object-cover">
+      <div class="absolute top-0 right-0 w-3/5 h-full flex  md:p-32 py-10 m-24 flex flex-col gap-4">
+        <h2 class="md:text-3xl text-2xl text-white font-bold ">The Best Technical Analysis Software helps 100% profit</h2>
+        <p class="text-white md:text-xl text-md">Unikaa system gives highly accurate automatic Buy, Sell, Target & Stop Loss Trading Signal Softwares for NSE, F&O, MCX SX, NCDEX, etc. (Equity, Future, Opinion, Commodity & Currency) to trade intraday, swing & positional trading.</p>
+        <button class="bg-inherit rounded-full p-2 text-white border border-white cursor-pointer w-2/4 md:w-1/4">Click for Demo</button>
+      </div>
+      
+    </li>
+    <li class="md:h-screen h-[500px]  md:pt-0 relative hidden">
+      <img src="./images/home/12345.jpg" alt="" class="h-full object-cover">
+      <div class="absolute top-0 left-0 w-3/5 h-full flex  md:p-32 py-10 m-24 flex flex-col gap-4">
+        <h2 class="md:text-3xl text-2xl text-white font-bold">Buy Sell Signal Accuracy above 95% </h2>
+        <p class="text-white md:text-xl text-md">Unikaa Software generates more than 95% accurate buy sell signal in NSE, FOREX, MCX SX, NCDEX, COMEX markets with double confirmed signals assires 100% profit.</p>
+        <button class="bg-inherit rounded-full p-2 text-white border border-white cursor-pointer w-2/4 md:w-1/4">Click for Demo</button>
+      </div>
+      
+    </li>
+  </ul>
+
+<div class=" h-full w-full px-5 absolute flex top-0 left-0 flex ">
+  <div class="my-auto w-full flex justify-between">
+    <button onclick="prev()" class="bg-white rounded-full bg-opacity-80 p-2 px-3"><i class="fa-solid fa-arrow-left"></i></button>
+    <button onclick="next()" class="bg-white rounded-full bg-opacity-80 p-2 px-3"><i class="fa-solid fa-arrow-right"></i></button>
+  </div>
+ 
+
+ 
+</div>
+ </div>
+  </section>
+ <section class="">
+          <div class="flex flex-col md:flex-row bg-[#F8F6F4] md:bg-inherit items-center justify-center py-8 md:left-48 md:absolute md:top-[660px]">
+         
+            <div class="bg-white rounded-lg w-[370px]  h-[280px] p-8 m-2">
+             <div class="flex p-2">
+              <img src="./images/home/target.png" alt=""> 
+              <h2 class="text-[#3576D4] font-bold text-3xl m-4 ">Mission</h2>
+             </div>
+              <p class="text-xl text-gray-400 m-2">Unikaa was formed keeping one mission in mind. To create trader friendly software</p>
+            </div>
+
+   
+
+            <div class="bg-white rounded-lg w-[370px]  h-[280px] p-8 m-2">
+              <div class="flex p-2">
+               <img src="./images/home/target2.png" alt=""> 
+               <h2 class="text-[#3576D4] font-bold text-3xl m-4 ">Vision</h2>
+              </div>
+               <p class="text-xl text-gray-400 m-2">To be recognized as the best technical advisor of quality service in our trading community</p>
+             </div>
+         
+             <div class="bg-white rounded-lg w-[370px]  h-[280px] p-8 m-2">
+              <div class="flex p-2">
+               <img src="./images/home/values.png" alt=""> 
+               <h2 class="text-[#3576D4] font-bold text-3xl m-4 ">Core Values</h2>
+              </div>
+               <p class="text-xl text-gray-400 m-2">Be knowledgeable, Be Service Hearted, Strive for Excellence, Integrity, Be a Problem Solver, Passionate with a great attitude.</p>
+             </div>
+          </div>
+
+        </section> 
+
+          <section class=" md:h-2/4 flex bg-[#F8F6F4] flex-col md:flex-row  h-auto p-4 md:pt-[250px] md:px-auto">
+     
+            <div class="flex flex-col w-full items-center ">
+
+
+             
+              
+                <div class="md:w-4/5 w-full flex flex-col gap-4 mx-2 items-center ">
+                    <h1 class="text-[#3576D4] font-bold text-2xl md:text-3xl font-mono">Welcome to Unikaa</h1>
+                    <p class="text-lg  md:text-xl font-mono text-slate-500">Unikaa Technical Analysis software works on charting platform.</p>
+                    <p class="text-lg md:text-xl font-mono text-slate-500">Unikaa Software is the leading brand in the stock market charting and technical analysis, for self-directed traders in Indian markets. This buy sell signal software, developed by professionals for Indian markets.</p>
+                  
+                  </div>
+                <div class="">
+                  <button class="rounded-full font-bold p-2 m-2  bg-[#3576D4] text-white text-xl">Apply Demo</button>
+              </div>
+
+            </div>
+              <div class="w-4/5 mx-auto p-2">
+                <img src="./images/home/welcometounikaa.png" alt="" class="mx-2">
+              </div>
+         
+
+         
+        
+            
+
+     
+        
+    </section>
+
+
+    <section class="bg-red-500 text-white h-[200px] md:h-[100px] flex items-center">
+      <div class="flex flex-col md:flex-row m-auto">
+        <h3 class="text-white font-bold text-3xl items-center py-2">Best Robo Trade Software</h3>   
+        <button class="bg-white text-[#3576D4] rounded-full w-2/4 md:w-1/4 font-bold md:p-2 p-4 mx-auto">Apply for Demo</button>
+      </div>/
+           
+    </section>
+
+    <section class="flex items-center h-auto md:h-4/6 relative">
+      <img src="./images/home/web_infographics.png" alt="" class="relative md:block hidden h-[550px]">
+         <img src="./images/home/robo-content.png" alt="" class="absolute m-4 md:block hidden left-24 p-12" >
+        <div class="flex flex-col"> 
+          <img src="./images/home/robo1m.jpg" alt="" class="md:hidden">
+          <img src="./images/home/robo2m.jpg" alt="" class="md:hidden">
+          <img src="./images/home/robo3m.jpg" alt=""class="md:hidden">
+        </div>
+         
+    </section>
+   
+
+<!-- product plan -->
+<section class="flex items-center h-auto md:h-[400px]  flex-col" style="background-image: url(./images/home/web_infographics.png)">
+  
+  <div class=" flex flex-col items-center gap-4 p-4">
+    <h1 class="text-[#3576D4] font-bold text-2xl md:text-3xl font-mono">Product Plans</h1>
+    <div class="flex md:flex-row flex-col  px-48 gap-8">
+     
+      <div class="bg-gradient-to-r from-blue-500 to-red-500 w-[370px] h-[250px] rounded-lg  flex flex-col items-center justify-center gap-2 shadow-lg shadow-red-100 hover:shadow-indigo-500/40">
+        <h3 class="text-[#3576D4] font-bold text-3xl text-center bg-white w-full">UNIKAA BASIC</h3>
+        <p class="text-bold text-white text-xl font-bold mt-4">Free Strategies</p>
+        <p class="text-white text-4xl font-bold">Worth Rs: 4,000</p>
+        <button class="text-[#3576D4] bg-white rounded-md p-2 font-bold">View More</button>
+      </div>
+     
+      <div class="bg-gradient-to-r from-blue-500 to-red-500 w-[370px] h-[250px] rounded-lg  flex flex-col items-center justify-center gap-2 shadow-lg shadow-red-100 hover:shadow-indigo-500/40">
+        <h3 class="text-[#3576D4] font-bold text-3xl text-center bg-white w-full">UNIKAA BASIC</h3>
+        <p class="text-bold text-white text-xl font-bold mt-4">Free Strategies</p>
+        <p class="text-white text-4xl font-bold">Worth Rs: 4,000</p>
+        <button class="text-[#3576D4] bg-white rounded-md p-2 font-bold">View More</button>
+      </div>
+      <div class="bg-gradient-to-r from-blue-500 to-red-500 w-[370px] h-[250px] rounded-lg  flex flex-col items-center justify-center gap-2 shadow-lg shadow-red-100 hover:shadow-indigo-500/40">
+        <h3 class="text-[#3576D4] font-bold text-3xl text-center bg-white w-full">UNIKAA BASIC</h3>
+        <p class="text-bold text-white text-xl font-bold mt-4">Free Strategies</p>
+        <p class="text-white text-4xl font-bold">Worth Rs: 4,000</p>
+        <button class="text-[#3576D4] bg-white rounded-md p-2 font-bold">View More</button>
+      </div>
+  
+    </div>
+  </div>
+ 
+ 
+</section>
+
+<!-- testimonial -->
+
+<section class="h-screen w-full ">
+  <div class="md:w-4/6 w-[400px] h-4/5 bg-white shadow-lg shadow-blue-500 m-auto mt-24 relative rounded-lg ">
+
+    <h3 class="text-[#3576D4] font-bold text-2xl md:text-3xl font-mono p-8 md:mx-52 m-12">Check out what our client's say</h3>
+    <div class="flex flex-col ">
+      <div class="bg-yellow-400 md:w-[180px] md:h-[200px] w-32 h-48 rounded-tr-lg rounded-bl-lg flex flex-col items-center p-4 absolute left-8 inset-x-36 inset-y-44 z-10  md:left-24 ">
+        <img src="./images/home/client_01.jpg" alt="">
+        <p class="text-[#3576D4]">Mr.Suresh Chennai</p>
+        <p>Client</p> 
+      </div>
+      <div class="bg-[#3576D4] text-white text-xl w-4/6 absolute md:top-32 top-12 mx-24 rounded-lg md:left-28  h-4/6 md:mt-0 mt-16">
+        <blockquote class="md:text-lg text-md md:font-bold italic text-white md:p-36 md:px-18 pl-20 pr-8  py-20 md:hidden block">
+          "Product is great, and the customer service is even better! Will definitely continue to use this product"
+      </blockquote>
+      <blockquote class="md:text-lg text-md font-bold italic text-white md:p-28 md:px-18   py-16 hidden md:block">
+        "After using this chart it was as clear as day I could watch and trade with a lot more confidence. I could see the patterns, signs, and indicators Based on what I learned and depending on the trend in the market. I highly recommend it and if you are looking to simplify your trades and improve your approach uses the unikaa swing strategy."
+    </blockquote>
+
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+            <!-- footer -->
+   <div id="footer" class="grid grid-cols-2 md:grid-cols-4 p-8 justify-center items-center bg-[#3576D4] h-[200px] w-screen h-auto text-white md:px-48 gap-12">
+
+
+    <div class="w-[350px] m-auto ">
+   
+        <h3 class="font-bold text-xl ">Unikaa Activities</h3>
+      <div class="text-xl text-slate-300">
+        <p>Upcoming Events</p>
+        <p>Seminars</p>
+        <p>Performance</p>
+      </div>
+    </div>
+    <div class="w-[350px] m-auto">
+        <h3 class="font-bold text-xl ">Quick Links</h3>
+         <ul class="text-xl text-slate-300">
+            <li><a href="#home">Terms & Conditions</a></li>
+            <li><a href="#about">Refund Policy</a></li>
+     
+            <li><a href="#product">Privacy Policy</a></li>
+          
+         </ul>
+    </div>
+    <div class="w-[350px] ">
+        <h3 class="font-bold text-xl ">Head Office</h3>
+       <div class="text-xl text-slate-300">
+        <p>Chennai, Tamilnadu, India.</p>
+        <p>+91 7092 77 44 55</p>
+        <p> +91 7092 77 44 22</p>
+        <p>info@unikaa.in</p>
+       </div>
+      </div>
+
+
+      <div class="w-[350px] ">
+        <h3 class="font-bold text-xl p-2">State Contact</h3>
+        <div class="text-xl text-slate-300">
+          <p>Tamilnadu</p>
+         <p>Kerala</p>
+         <p>Andhra</p>
+        </div>
+     
+      </div>
+</div>
+        
+        
+        <script>
+
+
+// toggleMenu
+function toggleMenu(){
+  menu=document.getElementById('menu');
+  if(menu.classList.contains('hidden')){
+    menu.classList.remove('hidden')
+  }else{
+    menu.classList.add('hidden')
+  }
+
+}           
+
+            let currentSlideId = 1;
+let sliderElement = document.getElementById('slider');
+let totalSlides = sliderElement.childElementCount;
+
+function prev() {
+  if (currentSlideId > 1) {
+    currentSlideId--;
+    showSlide();
+  }
+}
+
+function next() {
+  if (currentSlideId < totalSlides) {
+    currentSlideId++;
+    showSlide();
+  }
+}
+
+function showSlide() {
+  slides = document.getElementById('slider').getElementsByTagName('li');
+
+  for (let i = 0; i < totalSlides; i++) {
+    const element = slides[i];
+    if (currentSlideId === i + 1) {
+      element.classList.remove('hidden');
+    } else {
+      element.classList.add('hidden');
+    }
+  }
+}
+
+
+    
+        </script>
+<!-- fontawesome cdn -->
+
+        <script src="https://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script>
+</body>
+</html>
